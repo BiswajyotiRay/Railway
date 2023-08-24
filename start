@@ -1,3 +1,1 @@
-git clone -b $BRANCH $REPO_URL ok && cd ok
-pip3 install -U -r requirements.txt
-$START_CMD
+apt-get install python3 -y && apt-get install virtualenv -y && apt-get install git -y && git clone -b beta https://github.com/BiswajyotiRay/FSB-PRO && cd Shakida && virtualenv -p /usr/bin/python3 venv && . ./venv/bin/activate && pip install -r requirements.txt && python3 -m Shakida
